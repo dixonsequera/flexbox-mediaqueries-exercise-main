@@ -1,0 +1,157 @@
+body {
+
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.cuerpo {
+    display: flex;
+    flex-direction: row;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.box {
+
+    background-color: #f39c12;
+    list-style: none;
+    padding: 20px;
+}
+
+.horizontal-list {
+
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+
+.sidebar {
+    background-color: #ecf0f1;
+    padding: 20px;
+    flex-basis: 20%;
+}
+
+
+
+
+.main-content {
+
+    background-color: #e74c3c;
+    color: white;
+    padding: 20px;
+
+}
+
+
+.extra-info {
+    background-color: #8e44ad;
+    color: white;
+    padding: 20px;
+    flex-basis: 20%;
+}
+
+
+.services {
+    background-color: #27ae60;
+    padding: 20px;
+}
+
+.services .service-items {
+    background-color: #2ecc71;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+
+.testimonials {
+    background-color: #f39c12;
+    padding: 20px;
+}
+
+.testimonials .testimonial-items {
+    background-color: #f1c40f;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+
+.call-to-action {
+    background-color: #3498db;
+    padding: 20px;
+    text-align: center;
+}
+
+.call-to-action button {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.call-to-action button:hover {
+    background-color: #3498db;
+}
+
+
+
+
+@media (max-width: 600px) {
+
+    .cuerpo {
+
+        flex-direction: column;
+
+    }
+
+
+    .services,
+    .testimonials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    main {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    .extra-info {
+        order: -1;
+    }
+}
